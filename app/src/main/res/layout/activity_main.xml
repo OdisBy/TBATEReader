@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutGeral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkBG"
+    android:fadeScrollbars="false"
+    android:isScrollContainer="true"
+    android:nestedScrollingEnabled="true"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#232323">
+
+            <ImageView
+                android:id="@+id/imageOfNovel"
+                android:layout_width="177dp"
+                android:layout_height="244dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/imageofnovel"
+                app:srcCompat="@drawable/meninoart" />
+
+            <TextView
+                android:id="@+id/sinopseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageOfNovel"
+                android:padding="10dp"
+                android:text="@string/sinopseOfNovel"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dataLancamento"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/sinopseText"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_bg_border"
+                android:paddingLeft="4dp"
+                android:paddingTop="10dp"
+                android:paddingRight="4dp"
+                android:text="@string/data_lancamentos"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/github_Button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/sinopseText"
+                android:layout_marginStart="280dp"
+
+                android:contentDescription="@string/link_para_meu_github"
+                app:srcCompat="@drawable/github_icon" />
+
+            <ImageButton
+                android:id="@+id/notification_Button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/sinopseText"
+                android:layout_marginStart="180dp"
+                android:contentDescription="@string/ativar_notificacoes"
+                app:srcCompat="@drawable/bell" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/swapOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:contentDescription="@string/swap_button"
+                app:srcCompat="@drawable/swap_vert" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_capitulos"
+                android:layout_width="match_parent"
+                android:layout_height="815dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_capitulos" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

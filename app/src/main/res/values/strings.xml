@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TBATEReader</string>
+    <string name="api_realm_app_id">https://example.com/api/v1/endpoint</string>
+    <string name="sinopseOfNovel">Rei Grey conquistou força, riquezas e prestígio sem iguais em um mundo governado pela habilidade marcial. Entretanto, a solidão acompanha de perto aqueles de grande poder. Por detrás da máscara de um glorioso e poderoso rei, reside a casca vazia de um homem destituído de propósito e vontade. Renascido em um novo mundo repleto de magia e monstros, o Rei Grey terá a chance de refazer sua vida. Corrigir os erros do passado não será seu único desafio, pois um perigo oculto cresce a cada instante, ameaçando destruir tudo que ele trabalhou para criar, o fazendo questionar a verdadeira razão de ter recebido uma nova vida…</string>
+    <string name="imageofnovel">imageOfNovel</string>
+    <string name="data_lancamentos">Toda segunda-feira</string>
+    <string name="link_para_meu_github">Link para meu Github</string>
+    <string name="ativar_notificacoes">Ativar notificações</string>
+    <string name="swap_button">Inverter ordem dos capítulos</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_reader_page">readerPage</string>
+</resources>
